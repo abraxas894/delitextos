@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --blanco: #faf0e6;
+  --negro: #212121;
+}
+
+body {
+  color: var(--blanco);
+  background-color: var(--negro);
+  height: 100vh;
+}
+
+h1 {
+  margin: 0% 0%;
+  font: normal 4vw/1em 'Ysabeau', serif;
+  font-weight: 200;
+}
+
+h2 {
+  font: normal 2vw/1em 'Ysabeau', serif;
+  font-weight: 200;
+  margin: 3% 0%;
+}
+
+p {
+  margin: 5% 0%;
+  font: normal 1.6vw/1.2em 'Cutive Mono', monospace;
+  text-align: justify;
+}
+
+a {
+  text-decoration-line: none;
+  color: var(--blanco);
+}
+
+ul {
+  width: 100%;
+}
+
+li {
+  font: normal 1.3vw/1.2em 'Cutive Mono', monospace;
+  font-weight: 200;
+  text-align: justify;
+  padding: 2% 0%;
+}
+
+header p {
+  margin: 0%;
+}
+
+main p {
+  width: 60%;
+  margin: 5% 2% 5% 5%;
+  float: left;
+}
+
+main img {
+  width: 30%;
+  margin: 5% 0%;
+  float: left;
+}
+
+.deliT { 
+  font-family: 'Ysabeau SC', serif;
+}
+
+.cajaTxt {
+  width: 70%;
+  margin: 5% 5% 0% 5%;
+  float: left;
+}
+
+.cajaMenu {
+  width: 15%;
+  margin: 5% 5% 0% 0%;
+  float: left;
+}
+
+nav {
+  position: sticky;
+  top: 5%;
+}
+
+nav a div {
+  color: var(--blanco);
+  font: normal 1.3vw/1em 'Cutive Mono', serif;
+  padding: 2% 0%;
+}
+
+.piezasTextuales {
+  clear: both;
+}
+
+.piezasTextuales div {
+  width: 50%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blanco);
+  background-image: url(img/ribera.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 40%;
+}
+
+.piezasTextuales div p {
+  width: 70%;
+  padding: 5%;
+  text-align: center;
+  font: normal 1.2vw/1em 'Ysabeau', serif;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.manifiesto {
+  width: 90%;
+  margin: 5% 0% 5% 10%;
+}
