@@ -8,12 +8,12 @@
 :root {
   --blanco: #faf0e6;
   --negro: #212121;
+  --argenta: #C0C0C0;
 }
 
 body {
   color: var(--blanco);
   background-color: var(--negro);
-  height: 100vh;
 }
 
 h1 {
@@ -23,9 +23,8 @@ h1 {
 }
 
 h2 {
-  font: normal 2vw/1em 'Ysabeau', serif;
+  font: normal 1.2vw/1em 'Cutive Mono', serif;
   font-weight: 200;
-  margin: 3% 0%;
 }
 
 p {
@@ -39,31 +38,17 @@ a {
   color: var(--blanco);
 }
 
-ul {
+header {
   width: 100%;
-}
-
-li {
-  font: normal 1.3vw/1.2em 'Cutive Mono', monospace;
-  font-weight: 200;
-  text-align: justify;
-  padding: 2% 0%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header p {
   margin: 0%;
-}
-
-main p {
-  width: 60%;
-  margin: 5% 2% 5% 5%;
-  float: left;
-}
-
-main img {
-  width: 30%;
-  margin: 5% 0%;
-  float: left;
+  
 }
 
 .deliT { 
@@ -71,35 +56,132 @@ main img {
 }
 
 .cajaTxt {
-  width: 70%;
-  margin: 5% 5% 0% 5%;
-  float: left;
+  width: 90%;
+  margin: 0% 0% 0% 10%;
 }
 
 .cajaMenu {
-  width: 15%;
-  margin: 5% 5% 0% 0%;
-  float: left;
+  width: 50%;
+  height: 5vh;
+  margin: 0% 0% 2% 50%;
+  position: sticky;
 }
 
 nav {
-  position: sticky;
-  top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--blanco);
 }
 
-nav a div {
+nav a {
+  color: var(--negro);
+  font: normal 1.2vw/1em 'Cutive Mono', serif;
+  text-align: center;
+}
+
+.listoncitoTexto {
+  width: 50%;
+  height: 5vh;
+  margin: 0% 0% 0% 0%;
+  background-color: #e6ffe6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  float: left;
+}
+
+.listoncitoManifiesto {
+  width: 60%;
+  height: 5vh;
+  margin: 0%;
+  background-image: url(img/Flying_fish_with_two_people_-_detail_of_the_painting_Temptation_of_Saint_Anthony.jpg);
+  background-size: contain;
+}
+
+.listoncitoTexto div {
+  font: normal 1.2vw/1em 'Cutive Mono', serif;
+  color: var(--negro);
+  padding-right: 5%;
+}
+
+.listoncitoImg {
+  width: 0%;
+  height: 5vh;
+  margin: 0% 0% 0% 0%;
+  float: left;
+  background-image: url(img/detonacion.jpg);
+  background-size: contain;
+}
+
+main {
+  width: 100%;
+  margin: 0% 0% 2% 0%;
   color: var(--blanco);
-  font: normal 1.3vw/1em 'Cutive Mono', serif;
-  padding: 2% 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main figure {
+  width: 20%;
+  margin: 0% 0%;
+  float: left;
+  border: solid;
+  border-color: #e6ffe6;
+  border-width: 0px 0px 5px 20px;
+}
+
+main figcaption {
+  width: 100%;
+  height: 4vh;
+  color: var(--negro);
+  background-color: #e6ffe6;
+  font: normal 1vw/1em 'Ysabeau', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2%;
+}
+
+main figure img {
+  width: 100%;
+  margin: 0% 0%;
+}
+
+main p {
+  width: 60%;
+  margin: 0% 15% 0% 0%;
+  float: left;
+  font: normal 1.3vw/1.2em 'Cutive Mono', serif;
+  text-align: left;
+  color: var(--blanco);
 }
 
 .piezasTextuales {
+  width: 100%;
   clear: both;
+}
+
+.piezasTextuales h2 {
+  width: 100%;
+  height: 5vh;
+  color: var(--negro);
+  background-color: #ffcccc;
+  text-align: right;
+  margin: 0% 0% 2%;
+  padding: 0% 0% 0% 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .piezasTextuales div {
   width: 50%;
   height: 30vh;
+  margin: 0% 0% 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +189,7 @@ nav a div {
   background-image: url(img/ribera.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0% 40%;
+  background-position: 0% 35%;
 }
 
 .piezasTextuales div p {
@@ -115,10 +197,102 @@ nav a div {
   padding: 5%;
   text-align: center;
   font: normal 1.2vw/1em 'Ysabeau', serif;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(255, 255, 255, .6);
+  color: var(--negro);
+}
+
+.piezasTextuales a div:hover{
+  background-color: #9b0000;
+  mix-blend-mode: screen;
 }
 
 .manifiesto {
+  width: 100%;
+  margin: 0% 0% 2% 0%;
+}
+
+.manifiesto h2 {
+  width: 60%;
+  height: 5vh;
+  margin: 0% 0% 2%;
+  padding: 0% 0% 0% 10%;
+  background-color: #ffffcc;
+  color: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+ol {
+  width: 60%;
+}
+
+li {
+  font: normal 1vw/1.2em 'Cutive Mono', monospace;
+  font-weight: 200;
+  text-align: justify;
+  padding: 2% 0%;
+}
+
+footer {
+  width: 100%;
+  height: 15vh;
+  color: var(--negro);
+  background-color: var(--blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .fDeli {
+  width: 33.33%;
+}
+
+footer a {
+  text-decoration-line: none;
+}
+
+footer .fDeli h3 {
   width: 90%;
-  margin: 5% 0% 5% 10%;
+  margin: 0% 5%;
+  font: normal 2vw/1em 'Ysabeau', serif;
+  text-align: center;
+  color: var(--negro);
+  font-weight: 200;
+  padding: 2% 0%;
+  border-radius: 10px;
+}
+
+footer .fDeli .deliT { 
+  font-family: 'Ysabeau SC', serif;
+}
+
+footer .fDeli img {
+  width: 70%;
+  margin: 0% 15%;
+}
+
+footer nav {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav a {
+  font: normal 1.2vw/1.4em 'Flamenco', serif;
+  color: var(--negro);
+  text-decoration-line: none;
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+footer .fRS {
+  width: 33.33%;
+}
+
+footer .fRS a, p {
+  font: normal 1vw/1.2em 'Flamenco', serif;
+  color: var(--negro);
+  margin: 0%;
 }
