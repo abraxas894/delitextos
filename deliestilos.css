@@ -63,9 +63,9 @@ header p {
 .cajaMenu {
   position: sticky;
   top: 0%;
-  width: 45%;
+  width: 35%;
   height: 5vh;
-  margin: 0% 0% 2% 55%;
+  margin: 0% 0% 2% 65%;
 }
 
 nav {
@@ -79,7 +79,7 @@ nav {
 nav a {
   width: 100%;
   color: var(--negro);
-  font: normal 1.2vw/1em 'Cutive Mono', serif;
+  font: normal 1vw/1em 'Cutive Mono', serif;
   text-align: center;
 }
 
@@ -90,7 +90,7 @@ nav a:hover {
 }
 
 .listoncitoTexto {
-  width: 50%;
+  width: 60%;
   height: 5vh;
   margin: 0% 0% 0% 0%;
   background-color: #e6ffe6;
@@ -110,7 +110,7 @@ nav a:hover {
 }
 
 .listoncitoTexto div {
-  font: normal 1.4vw/1em 'Cutive Mono', serif;
+  font: normal 1.2vw/1em 'Cutive Mono', serif;
   color: var(--negro);
   padding-right: 5%;
 }
