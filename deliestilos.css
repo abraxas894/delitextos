@@ -134,7 +134,7 @@ main {
 }
 
 main figure {
-  width: 20%;
+  width: 30%;
   margin: 0% 0%;
   float: left;
   border: solid;
@@ -160,8 +160,9 @@ main figure img {
 }
 
 main p {
-  width: 60%;
-  margin: 0% 15% 0% 0%;
+  width: 50%;
+  margin: 0% 20% 0% 0%;
+  padding-left: 2%;
   float: left;
   font: normal 1.3vw/1.2em 'Cutive Mono', serif;
   text-align: left;
@@ -171,6 +172,10 @@ main p {
 .piezasTextuales {
   width: 100%;
   clear: both;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; */
 }
 
 .piezasTextuales h2 {
@@ -193,10 +198,25 @@ main p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.piezasTextuales div#pzLaberinto {
   background-image: url(img/ribera.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 35%;
+}
+
+.piezasTextuales div#pzAsterion {
+  background-image: url(img/laberintoKircher.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 52%;
+}
+
+.piezasTextuales div#pzAsterion p {
+  background-color: rgba(219, 112, 147, .9);
+  color: var(--blanco);
 }
 
 .piezasTextuales div p {
@@ -246,12 +266,12 @@ footer {
   color: var(--negro);
   background-color: var(--blanco);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-footer .fDeli {
-  width: 33.33%;
+footer section {
+  width: 50%;
 }
 
 footer a {
